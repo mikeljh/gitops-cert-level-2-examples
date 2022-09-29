@@ -1,5 +1,7 @@
 apiVersion: batch/v1
 kind: Job
+annotations:
+  argocd.argoproj.io/hook: PostSync
 metadata:
   namespace: example03
   generateName: cleanup-after-sync-
